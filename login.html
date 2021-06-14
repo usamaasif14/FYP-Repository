@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> Login Page</title>
+    <!--Linking css js files and also bootstrap CDN link-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="Style.css">
+    <script type="text/javascript" src="login_script.js" ></script>
+
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm navbar-light bg-light ">
+
+        <a  href="#" class="navbar-brand" >
+          <img src="F:\Skin Cancer Detection\Front-End\demo-logo.png">
+        </a>
+
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div  class="collapse navbar-collapse"  id="menu">
+            <ul class="navbar-nav ml-auto">
+                 <li class="nav-item active">
+                     <a href="#" class="nav-link">Home</a>
+                 </li>
+                 <li class="nav-item">
+                        <a href="#" class="nav-link">Blog</a>
+                 </li>
+                <li class="nav-item">
+                     <a href="#" class="nav-link">For Doctors</a>
+                </li>
+                 <li class="nav-item">
+                     <a href="#" class="nav-link">Contact Us</a>
+                </li>
+                 <li class="nav-item">
+                        <a href="#" class="nav-link">Try your Skin</a>
+                  </li>
+             </ul>
+       </div>
+       </nav>
+       <!---Banner Section --->
+       <section id= "banner">
+       <div class= "container">
+
+
+       <div class = "col-md-6 col-sm-6 col-6 text-center ">
+         <p class="promo-title"> Welcome to Doctors on SCD</p>
+       </div>
+       </div>
+
+       <img src="F:\Skin Cancer Detection\Front-End\wave1.png" class="wave-img">
+
+       </section>
+         <!--End of Banner Section--->
+
+
+
+
+<!---Start of Form---->
+    <div class="login_page">
+      <form class="login_form" onsubmit="return Validate()" name="login">
+        <label class="sign_in"> Sign-In </label>
+
+     <input  id="email" type="email" placeholder="Email"/>
+      <input  id ="password"type="password"  placeholder="Password"/>
+
+      <button  onclick="validate()" class="btn_login" type="button">Login</button>
+<p class="msg_login" >Not Registered? <a href="#" >Register </a></p>
+<p  class="forgot_pwd" ><a href="forgot.html" >Forgot Password? </a></p>
+      </form>
+
+
+
+      </div>
+      <!---End of Form------>
+
+      <!--Start of bottom area-->
+      <footer id="footer">
+        <div class="container-fluid">
+            <div class="row text-muted">
+                <!--About Us Div-->
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 ">
+                    <h5><u>ABOUT US</u></h5>
+                   <p> <br>Lorem Ipsum is simply dummy text of the printing and typesetting industry ....<br>
+                    <br>Address<br>
+                    500 Lorem Ipsum Dolor Sit,<br>
+                    22-56-2-9 Sit Amet,
+                   <br> USA<br>
+                    <br>Phone: (00) 222 666 444<br>
+                    Fax: (000) 000 00 00 0</p>
+                    </div>
+
+                    <!--Start of Latest Posts-->
+          <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 ">
+                <h5><u>LATEST POSTS</u></h5>
+                <p>Fusce scelerisque massa vitae</p>
+                <p>25 April 2013</p>
+                <p>Pellentesque bibendum ante</p>
+                <p>15 March 2013</p>
+                <p>Maecenas quis ipsum sed magna</p>
+                <p>25 April 2013</p>
+           </div>
+
+       <!--Start of Latest Posts-->
+       <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 ">
+        <h5><u>LATEST POSTS</u></h5>
+        <p>Fusce scelerisque massa vitae</p>
+        <p>25 April 2013</p>
+        <p>Pellentesque bibendum ante</p>
+        <p>15 March 2013</p>
+        <p>Maecenas quis ipsum sed magna</p>
+        <p>25 April 2013</p>
+      </div>
+      <!--End of Latest Posts-->
+      <!--Social Media links-->
+      <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 ">
+        <h5><u> SOCIAL MEDIA</u></h5>
+      <a href="#" id="twt" ><img class="social_size" src="F:\Skin Cancer Detection\Front-End\twitter-icon.png"></a>
+      <a href="#" id="fb" ><img class="social_size" src="F:\Skin Cancer Detection\Front-End\facebook-icon.png"></a>
+      <a href="#" id="linkedin"><img class="social_size" src="F:\Skin Cancer Detection\Front-End\linkedin-icon.png"></a>
+      <a href="#" id="insta"><img class="social_size" src="F:\Skin Cancer Detection\Front-End\instagram-icon.png"></a>
+      </div>
+      <!--End of media links-->
+
+
+      <!--Start of below line-->
+      <div class="col-12">
+        <br><br><br><br>
+        <p>&nbsp;</p>
+        <hr>
+        <br>
+        <p align="center">&#169;<span style ="color:purple "> All rights reserved | SCD 2021 </span></p>
+      </div>
+      </div>
+
+      </div>
+
+      </footer>
+
+
+
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+
+
+
+  </body>
+</html>

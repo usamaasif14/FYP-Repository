@@ -1,0 +1,252 @@
+*
+{
+    margin:0;
+    padding: 0;
+}
+body
+{
+    font-family: sans-serif;
+}
+
+.navbar
+{
+    background-image: linear-gradient(to right, #a517ba,#5f1782);
+    padding: 0 !important;
+}
+
+.navbar-nav li
+{
+    padding: 0 10px;
+}
+.navbar-nav li  a
+{
+    color: #fff !important;
+    font-weight: 600;
+    float:right;
+    text-align: left;
+    margin-top: 20px;
+}
+.navbar-nav li  a:hover
+{
+    background-color: aqua;
+}
+
+/*--------Banner Section-----------*/
+#banner
+{
+    background-image:linear-gradient(to right, #a517ba,#5f1782) ;
+    color:#fff;
+    padding-top: 5%;
+}
+.promo-title
+{
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 50px;
+    margin-right: -70%;
+}
+.title
+{
+    margin-right: -70%;
+}
+.btn
+{
+  color: white;
+  background-color: blue;
+  margin-right: -70%;
+}
+
+  #banner a
+  {
+    color:#fff;
+    text-decoration: none;
+  }
+  .wave-img
+  {
+      width: 100%;
+      margin-top: 0px;
+  }
+  #footer
+  {
+    margin-top: 150px;
+  }
+
+  .social_size
+  {
+    width:50px;
+    height: 50px;
+    padding:2px;
+  }
+.social_size:hover
+{
+transform: scale(1.5);
+}
+/*----End of Home page----*/
+/*----Start of Login page----*/
+.sign_in
+{
+  color: purple;
+  width: 80%;
+  padding:15px;
+  font-size: 40px;
+}
+
+.login_page
+{
+  width: 360px;
+  padding: 0% 0 0;
+  margin:auto;
+}
+.login_form
+{
+  position: relative;
+  z-index: 3;
+  background: #fff;
+  max-width: 300px;
+align-items: center;
+  padding: -20px;
+  text-align: center;
+}
+.login_form input
+{
+  font-family: "Roboto ",sans-serif;
+  outline: 1;
+  width: 100%;
+  border: 3;
+  margin:  10px;
+  padding: 12px;
+  box-sizing: border-box;
+  font-size: 14px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.btn_login
+{
+  border-radius: 10px;
+  padding: 10px;
+  width:75%;
+  background-color: purple;
+  font-size: 20px;
+  color: white;
+}
+.btn_login:hover
+{
+  background: blue;
+
+}
+.msg_login
+{
+  padding: 20px;
+}
+/* End of Login Form*/
+/*Start of signup form*/
+.signup_page
+{
+  width: 360px;
+  padding: 0% 0 0;
+  margin:auto;
+}
+
+.signup_form
+{
+  position: relative;
+  z-index: 3;
+  background: #fff;
+  max-width: 300px;
+align-items: center;
+  padding: -20px;
+  text-align: center;
+}
+.signup_form input
+{
+  font-family: "Roboto ",sans-serif;
+  outline: 1;
+  width: 100%;
+  border: 3;
+  margin:  10px;
+  padding: 12px;
+  box-sizing: border-box;
+  font-size: 14px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.sign_up
+{
+  color: purple;
+  width: 80%;
+  padding:15px;
+  font-size: 27px;
+}
+
+.btn_create
+{
+  border-radius: 10px;
+  padding: 10px;
+  width:75%;
+  background-color: purple;
+  font-size: 20px;
+  color: white;
+}
+.btn_login:hover
+{
+  background: blue;
+
+}
+/*---Signup End---*/
+/*---Forgot Start---*/
+.forgot_page
+{
+  width: 360px;
+  padding: 0% 0 0;
+  margin:auto;
+}
+
+.forgot_form
+{
+  position: relative;
+  z-index: 3;
+  background: #fff;
+  max-width: 300px;
+align-items: center;
+  padding: -20px;
+  text-align: center;
+}
+.forgot_form input
+{
+  font-family: "Roboto ",sans-serif;
+  outline: 1;
+  width: 100%;
+  border: 3;
+  margin:  10px;
+  padding: 12px;
+  box-sizing: border-box;
+  font-size: 14px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.proceed_btn
+{
+  border-radius: 10px;
+  padding: 10px;
+  width:75%;
+  background-color: purple;
+  font-size: 20px;
+  color: white;
+}
+.proceed_btn:hover
+{
+  background: blue;
+
+}
+.pwd_forgot
+{
+  color: purple;
+  width: 80%;
+  padding:15px;
+  font-size: 27px;
+}
+.text1
+{
+  margin-top: 10px;
+}
+/*----End of Forgot Form--*/
