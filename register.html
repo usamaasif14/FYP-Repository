@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -58,14 +59,13 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 
-
 	<style>
 		body,
 		html {
 			margin: 0;
 			padding: 0;
 			height: 100%;
-			background: white !important;
+			background: #white !important;
 		}
 		.user_card {
 			width: 350px;
@@ -90,14 +90,11 @@
 
 		#form-title{
 			color: #fff;
-			
 		}
-
 		.login_btn {
-			width: 80%;
+			width: 100%;
 			background: #33ccff !important;
 			color: white !important;
-			padding:10px;
 			margin-right:10px;
 		}
 		.login_btn:focus {
@@ -106,7 +103,6 @@
 		}
 		.login_container {
 			padding: 0 2rem;
-			
 		}
 		.input-group-text {
 			background: #f7ba5b !important;
@@ -120,12 +116,6 @@
 			outline: 0px !important;
 		}
 
-		#messages{
-			background-color: grey;
-			color: #fff;
-			padding: 10px;
-			margin-top: 10px;
-		}
 	</style>
 
 </head>
@@ -134,45 +124,67 @@
 		<div class="d-flex justify-content-center h-100">
 			<div class="user_card">
 				<div class="d-flex justify-content-center">
-
-
-					<h3 id="form-title">LOGIN</h3>
+					<h3 id="form-title">REGISTER ACCOUNT</h3>
 				</div>
 				<div class="d-flex justify-content-center form_container">
+
 					<form method="POST" action="">
-                        {% csrf_token %}
+						{% csrf_token %}
 						<div class="input-group mb-3">
 							<div class="input-group-append">
 								<span class="input-group-text"><i class="fas fa-user"></i></span>
 							</div>
-							<input type="text" name="username" placeholder="Username..." class="form-control">
+							{{form.username}}
+						</div>
+						<div class="input-group mb-2">
+							<div class="input-group-append">
+								<span class="input-group-text"><i class="fas fa-envelope-square"></i></span>
+							</div>
+							{{form.email}}
 						</div>
 						<div class="input-group mb-2">
 							<div class="input-group-append">
 								<span class="input-group-text"><i class="fas fa-key"></i></span>
 							</div>
-								<input type="password" name="password" placeholder="Password..." class="form-control" >
+							{{form.password1}}
+						</div>
+						<div class="input-group mb-2">
+							<div class="input-group-append">
+								<span class="input-group-text"><i class="fas fa-key"></i></span>
+							</div>
+							{{form.password2}}
 						</div>
 
-							<div class="d-flex justify-content-center mt-3 login_container">
-				 				<input class="btn login_btn" type="submit" value="Login">
-				   			</div>
+				   		<div class="d-flex justify-content-center mt-3 login_container">
+				 			<input class="btn login_btn" type="submit" value="Register Account">
+				   		</div>
 					</form>
-
 				</div>
-                {% for message in messages%}
-                    <p id="messages">{{message}}</p>
-                {% endfor %}
 		
 				<div class="mt-4">
 					<div class="d-flex justify-content-center links">
-						Don't have an account? <a href="{% url 'register' %}" class="ml-2">Sign Up</a>
+						Already have an account? <a href="{% url 'login' %}" class="ml-2">Login</a>
 					</div>
-			
 				</div>
 			</div>
 		</div>
 	</div>
-</body>
+	<script>
+						/* Because i didnt set placeholder values in forms.py they will be set here using vanilla Javascript
+		//We start indexing at one because CSRF_token is considered and input field 
+		 */
 
+		//Query All input fields
+		var form_fields = document.getElementsByTagName('input')
+		form_fields[1].placeholder='Username..';
+		form_fields[2].placeholder='Email..';
+		form_fields[3].placeholder='Enter password...';
+		form_fields[4].placeholder='Re-enter Password...';
+
+
+		for (var field in form_fields){	
+			form_fields[field].className += ' form-control'
+		}
+	</script>
+</body>
 </html>

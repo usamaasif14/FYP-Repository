@@ -1,113 +1,28 @@
-<html>
-<head>
-  <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Skin Cancer Detection </title>
-<link rel="stylesheet" href="Style.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
-<link rel="stylesheet" href ="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+{% extends 'header.html' %}
 
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<!--Start of body section-->
+{% block body %}
 
-
-
-
-
-</head>
-<body>
-
-<section id ="nav-bar">
-<nav class="navbar navbar-expand-lg navbar-light ">
-  
-    <a class="navbar-brand" href="#"><img src="F:\Skin Cancer Detection\Front-End\demo-logo.png"</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <i class="fa fa-bars"></i> <!--For mobile device view-->
-    </button>
-    
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="#">Home</a>
-        </li>
-        <li class="nav-item"> 
-          <a class="nav-link" href="#">Blog</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">For Doctors</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link " href="#" >Contact Us</a>
-        </li>
-      </ul>
-    </div>
- 
-
-</nav>
-</section>
-
-</body>
+{% load static %}
 <!--Banner Section-->
 <section id= "banner">
 <div class= "container">
-  
-  
-<div class = "col-md-6  text-center">
+
+
+<div class = "col-md-6 col-sm-6 col-6 text-center">
 <p class="promo-title"> Worried about your mole?</p>
 <p class="title"> Perform regular self-checks for skin cancer with your phone.</p>
- <a href="#" class="button">Check your Skin</a> 
+ <button class="btn"  type="button"> <a href="/checking">Check your Skin</button></a>
 </div>
 </div>
 
 
-<img src="F:\Skin Cancer Detection\Front-End\wave1.png" class="wave-img">
+<img src={% static 'wave1.png' %} class="wave-img">
 
 </section>
-<!--End of Banner section-------->
-<!--Start of bottom area-->
-<footer id="footer">
-  <div class="container-fluid">
-      <div class="row text-muted">
-          <!--About Us Div-->
-          <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 ">
-              <h5><u>ABOUT US</u></h5>
-             <p> <br>Lorem Ipsum is simply dummy text of the printing and typesetting industry ....<br>
-              <br>Address<br>
-              500 Lorem Ipsum Dolor Sit,<br>
-              22-56-2-9 Sit Amet,
-             <br> USA<br>
-              <br>Phone: (00) 222 666 444<br>
-              Fax: (000) 000 00 00 0</p>
-              </div>
 
-              <!--Start of Latest Posts-->
-    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 ">
-          <h5><u>LATEST POSTS</u></h5>
-          <p>Fusce scelerisque massa vitae</p>
-          <p>25 April 2013</p>
-          <p>Pellentesque bibendum ante</p>
-          <p>15 March 2013</p>
-          <p>Maecenas quis ipsum sed magna</p>
-          <p>25 April 2013</p>
-     </div>
 
- <!--Start of Latest Posts-->
- <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 ">
-  <h5><u>LATEST POSTS</u></h5>
-  <p>Fusce scelerisque massa vitae</p>
-  <p>25 April 2013</p>
-  <p>Pellentesque bibendum ante</p>
-  <p>15 March 2013</p>
-  <p>Maecenas quis ipsum sed magna</p>
-  <p>25 April 2013</p>
-</div>
-</div>
+{% include 'footer.html' %}
 
-</div>
-<!--End of Latest Posts-->
 
-</html>
+{% endblock %}
